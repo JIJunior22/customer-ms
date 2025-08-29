@@ -9,7 +9,7 @@ public enum Species {
     AVE;
 
     @JsonCreator
-    public Species fromString(String value) {
+    public static Species fromString(String value) {
         return Species.valueOf(value.toUpperCase());
     }
 
